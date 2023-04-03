@@ -6,6 +6,9 @@
   --dark-gray: #0f172a;
   --texts-gray: #64748b;
 
+  --bg-color: #334155;
+  --sidebar-bg-color: #0f172a;
+
   /* Status and priority Colors */
   --next-up: #94a3b8;
   --in-progress: #fcd34d;
@@ -30,11 +33,11 @@
   width: 100vw;
   height: 80px;
   background-color: var(--primary-color);
-  padding-left: 40px;
 }
 
 .header a {
   text-decoration: none;
+  padding-left: 40px;
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
@@ -48,4 +51,8 @@ header a img {
 
 header a h1 {
   color: #fff;
+}
+
+body {
+  background-color: var(--bg-color);
 }

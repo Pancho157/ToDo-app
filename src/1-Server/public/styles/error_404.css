@@ -1,0 +1,24 @@
+.error_message--container {
+  width: 350px;
+  padding: 20px;
+  background-color: var(--gray);
+  border-radius: 15px;
+  box-shadow: 4px 5px 4px var(--primary-color);
+
+  position: absolute;
+  top: calc(50vh + 80px - 180px);
+  left: calc(50vw - 175px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error_message--container h2,
+.error_message--container p {
+  color: #fff;
+}
+
+.error_message--container p {
+    font-size: var(--big-text);
+}
