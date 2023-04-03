@@ -1,0 +1,51 @@
+:root {
+  /* Primary Colors */
+  --primary-color: #6d28d9;
+  --ligth-gray: #334155;
+  --gray: #1e293b;
+  --dark-gray: #0f172a;
+  --texts-gray: #64748b;
+
+  /* Status and priority Colors */
+  --next-up: #94a3b8;
+  --in-progress: #fcd34d;
+  --pending: #3f20ff;
+  --discarted: #8b5cf6;
+  --completed: #10b981;
+  --high-priority: #ef4444;
+  --medium-priority: #b45309;
+  --low-priority: #10b981;
+
+  /* Texts */
+  --header-title: 39.81px;
+  --big-text: 18px;
+  --normal-text: 16px;
+  --small-text: 1.22px;
+  --footer-text: 11.24px;
+}
+
+/* --------------------------------------------------------- */
+
+.header {
+  width: 100vw;
+  height: 80px;
+  background-color: var(--primary-color);
+  padding-left: 40px;
+}
+
+.header a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 20px;
+}
+
+header a img {
+  width: 40px;
+  height: 40px;
+}
+
+header a h1 {
+  color: #fff;
+}

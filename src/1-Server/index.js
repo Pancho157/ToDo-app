@@ -33,5 +33,5 @@ app.use("/events", events);
 
 // Error 404
 app.use((req, res) => {
-  res.status(404).send("Error 404: Page not found");
+  res.status(404).render("error_404");
 });
