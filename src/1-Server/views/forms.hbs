@@ -6,11 +6,36 @@
       <button class="form__selector_button">Register form</button>
     </div>
     {{! ------------------------------- }}
-    <form action="/login" method="post">
+    <form class="form" action="/login" method="post">
+      <div class="forms__input_container">
+        <label class="forms__label" for="">User email:</label>
+        <input
+          class="forms__input"
+          type="email"
+          name=""
+          id=""
+          placeholder="Email"
+        />
+      </div>
 
+      <div class="forms__input_container">
+        <label class="forms__label" for="">Password:</label>
+        <input
+          class="forms__input"
+          type="password"
+          name=""
+          id=""
+          placeholder="*********"
+        />
+      </div>
+
+      <a href="/reset-password" class="form__reset_password">Forgot your
+        password?</a>
+
+      <button class="forms__submit_button" type="submit">Login</button>
     </form>
     {{! ------------------------------- }}
-    <form action="/register" method="post">
+    <form class="form" action="/register" method="post">
 
     </form>
   </div>
