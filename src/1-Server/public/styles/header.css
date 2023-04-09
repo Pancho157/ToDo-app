@@ -23,7 +23,7 @@
   --header-title: 39.81px;
   --big-text: 18px;
   --normal-text: 16px;
-  --small-text: 1.22px;
+  --small-text: 14.22px;
   --footer-text: 11.24px;
 }
 
@@ -57,6 +57,7 @@ header a img {
   width: 40px;
   height: 40px;
   object-fit: fill;
+  border-radius: 10px;
 }
 
 header a h1 {
