@@ -1,21 +1,20 @@
 <div class="forms__body">
   <div class="forms__container">
     <div class="form__selector">
-      <button class="form__selector_button form__selector_button--active">Login
-        form</button>
-      <button class="form__selector_button">Register form</button>
+      <button
+        onclick="changeToLoginForm()"
+        class="form__selector_button form__selector_button--active"
+      >Login form</button>
+      <button
+        onclick="changeToRegisterForm()"
+        class="form__selector_button"
+      >Register form</button>
     </div>
     {{! ------------------------------- }}
-    <form class="form" action="/login" method="post">
+    <form class="form login_form" action="/login" method="post">
       <div class="forms__input_container">
-        <label class="forms__label" for="">User email:</label>
-        <input
-          class="forms__input"
-          type="email"
-          name=""
-          id=""
-          placeholder="Email"
-        />
+        <label class="forms__label" for="">Email:</label>
+        <input class="forms__input" type="email" name="" placeholder="Email" />
       </div>
 
       <div class="forms__input_container">
@@ -24,7 +23,6 @@
           class="forms__input"
           type="password"
           name=""
-          id=""
           placeholder="*********"
         />
       </div>
@@ -35,8 +33,35 @@
       <button class="forms__submit_button" type="submit">Login</button>
     </form>
     {{! ------------------------------- }}
-    <form class="form" action="/register" method="post">
+    <form class="form register_form" action="/register" method="post">
+      <div class="forms__input_container">
+        <label class="forms__label" for="">Email:</label>
+        <input class="forms__input" type="email" name="" placeholder="Email" />
+      </div>
 
+      <div class="forms__input_container">
+        <label class="forms__label" for="">Password:</label>
+        <input
+          class="forms__input"
+          type="password"
+          name=""
+          placeholder="*********"
+        />
+      </div>
+
+      <div class="forms__input_container">
+        <label class="forms__label" for="">Confirm password:</label>
+        <input
+          class="forms__input"
+          type="password"
+          name=""
+          placeholder="*********"
+        />
+      </div>
+
+      <button class="forms__submit_button" type="submit">Register</button>
     </form>
   </div>
 </div>
+
+<script src="/scripts/change_form.js"></script>

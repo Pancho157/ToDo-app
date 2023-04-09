@@ -6,9 +6,11 @@
 .forms__container {
   background-color: var(--dark-gray);
   width: 416px;
+  height: 400px; /* Changed to 490 for register form */
   border-radius: 15px;
   padding: 40px;
   box-shadow: 4px 5px 4px var(--primary-color);
+  overflow: hidden;
 }
 
 .form {
@@ -16,6 +18,18 @@
   flex-direction: column;
   align-items: center;
   row-gap: 16px;
+  transition: all 300ms;
+}
+
+.login_form {
+  position: relative;
+  left: 0;
+}
+
+.register_form {
+  position: relative;
+  top: -251;
+  left: 150%;
 }
 
 .form__selector {
