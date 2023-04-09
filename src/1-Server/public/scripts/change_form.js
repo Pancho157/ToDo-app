@@ -12,7 +12,7 @@ function changeToLoginForm() {
 }
 
 function changeToRegisterForm() {
-  document.getElementsByClassName("forms__container")[0].style.height = "490px";
+  document.getElementsByClassName("forms__container")[0].style.height = "450px";
   document.getElementsByClassName("login_form")[0].style.left = "-150%";
   document.getElementsByClassName("register_form")[0].style.left = "0%";
 
