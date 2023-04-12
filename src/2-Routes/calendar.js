@@ -2,7 +2,7 @@ const { Router } = require("express");
 
 const calendar = Router();
 
-calendar.get("/:user", (req, res) => {
+calendar.get("/", (req, res) => {
   res.render("calendar", { layout: "calendar" });
 });
 

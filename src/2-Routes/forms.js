@@ -3,7 +3,7 @@ const { Router } = require("express");
 const forms = Router();
 
 forms.get("/", (req, res) => {
-  res.render("forms");
+  res.render("forms", { layout: "forms" });
 });
 
 forms.post("/login", () => {});

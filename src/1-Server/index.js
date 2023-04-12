@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const { forms } = require("../2-Routes/forms");
 const { tasks } = require("../2-Routes/tasks");
-const { canendar } = require("../2-Routes/canendar");
+const { calendar } = require("../2-Routes/calendar");
 const { accounts } = require("../2-Routes/accounts");
 
 const express = require("express");
@@ -28,8 +28,8 @@ app.set("views", path.join(__dirname, "views"));
 // Routes
 app.use("/", forms);
 app.use("/tasks", tasks);
-app.use("/notes", canendar);
-app.use("/events", accounts);
+app.use("/calendar", calendar);
+app.use("/accounts", accounts);
 
 // Error 404
 app.use((req, res) => {
