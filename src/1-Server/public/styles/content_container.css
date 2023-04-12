@@ -9,5 +9,7 @@
 .main__image {
   width: 100%;
   height: 180px;
-  object-fit: cover;
+  background-image: url("https://wallpaperaccess.com/full/974541.jpg");
+  background-position: center;
+  background-size: cover;
 }

@@ -1,12 +1,13 @@
 :root {
   /* Primary Colors */
   --primary-color: #6d28d9;
+  --lighter-gray: #64748b;
   --ligth-gray: #334155;
   --gray: #1e293b;
   --dark-gray: #0f172a;
   --texts-gray: #64748b;
 
-  --bg-color: #334155;
+  --bg-color: #1e293b;
   --sidebar-bg-color: #0f172a;
 
   /* Status and priority Colors */
@@ -21,6 +22,7 @@
 
   /* Texts */
   --header-title: 39.81px;
+  --sub-title: 23.08px;
   --big-text: 18px;
   --normal-text: 16px;
   --small-text: 14.22px;
