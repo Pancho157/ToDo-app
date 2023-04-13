@@ -26,7 +26,7 @@
 }
 
 .profile__name {
-  color: #fff; 
+  color: #fff;
   font-size: var(--small-text);
 }
 
@@ -39,6 +39,7 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 300ms;
+  color: #fff;
 }
 
 .profile__logout:hover {

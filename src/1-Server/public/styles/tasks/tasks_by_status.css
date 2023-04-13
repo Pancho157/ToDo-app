@@ -1,0 +1,8 @@
+.main__content {
+  padding-top: 80px;
+
+  display: flex;
+  justify-content: center;
+  column-gap: 120px;
+  row-gap: 80px;
+}
