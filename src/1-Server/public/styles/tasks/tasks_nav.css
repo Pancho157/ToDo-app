@@ -14,8 +14,16 @@
   margin-left: 0;
 }
 
+.display__selector:hover {
+  color: var(--lighter-gray);
+}
+
 .display__selector--active {
   padding: 2px 24px;
   background-color: var(--lighter-gray);
   border-radius: 10px 10px 0 0;
+}
+
+.display__selector--active:hover {
+  color: #fff;
 }

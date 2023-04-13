@@ -67,6 +67,7 @@
 .aside__link:hover {
   box-shadow: inset -300px -300px var(--gray);
   border-radius: 10px;
+  transform: scale(1.05);
 }
 
 .aside__link--active {
