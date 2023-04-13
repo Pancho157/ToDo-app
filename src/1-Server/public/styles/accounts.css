@@ -1,3 +1,12 @@
+.main__content {
+  padding-top: 80px;
+
+  display: flex;
+  justify-content: center;
+  column-gap: 120px;
+  row-gap: 80px;
+}
+
 .cards__container {
   display: flex;
   flex-direction: column;
@@ -31,4 +40,75 @@ p.green-text {
 
 p.red-text {
   color: #e81f1f;
+}
+
+.table__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+.table__nav {
+  background-color: var(--dark-gray);
+  padding: 16px;
+  border-radius: 16px;
+
+  display: flex;
+  column-gap: 16px;
+}
+
+.table__selector {
+  background-color: var(--dark-gray);
+  font-size: var(--normal-text);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.table__selector--active {
+  background-color: var(--gray);
+  font-size: var(--normal-text);
+  border: none;
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.table {
+  width: 700px;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 4px 16px;
+  border-bottom: 1px solid var(--lighter-gray);
+  border-left: 1px solid var(--lighter-gray);
+  color: #fff;
+  text-align: center;
+}
+
+.table th:first-of-type,
+.table tr td:first-of-type {
+  border-left: none;
+  text-align: left;
+  width: 260px;
+}
+
+.table_data__category--income {
+  background-color: #53b657;
+  padding: 2px 8px;
+  border-radius: 8px;
+}
+
+.table_data__category--outcome {
+  background-color: var(--primary-color);
+  padding: 2px 8px;
+  border-radius: 8px;
+}
+
+.table tr td.table__add_element {
+  padding-left: 32px;
+  color: var(--lighter-gray);
 }
