@@ -6,3 +6,26 @@
   column-gap: 120px;
   row-gap: 80px;
 }
+
+.cards__container {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 30px;
+}
+
+.cards__container .cards__group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card_group__title {
+  width: fit-content;
+  background-color: var(--lighter-gray);
+  padding: 2px 16px;
+  border-radius: 8px;
+}
