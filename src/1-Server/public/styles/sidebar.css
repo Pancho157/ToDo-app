@@ -4,6 +4,7 @@
   padding: 20px;
   background-color: var(--dark-gray);
   position: fixed;
+  z-index: 1000;
 }
 
 .profile {
