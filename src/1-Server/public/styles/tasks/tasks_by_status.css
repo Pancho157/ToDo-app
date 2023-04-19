@@ -13,13 +13,14 @@
   margin-left: 5%;
   margin-top: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   column-gap: 8px;
   padding-bottom: 80px;
 }
 
 .cards__container .cards__group {
   width: 100%;
+  max-width: 200px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -71,15 +72,15 @@
   border-radius: 4px;
 }
 
-.card__priority.low {
+.low {
   background-color: #43deab;
 }
 
-.card__priority.medium {
+.medium {
   background-color: #de7f37;
 }
 
-.card__priority.high {
+.high {
   background-color: #ef4444;
 }
 

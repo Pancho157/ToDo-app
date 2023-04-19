@@ -37,6 +37,65 @@
       <a href="/tasks/timeline" class="display__selector">Timeline</a>
     </nav>
   </div>
-  
-  <div class="cards__container"></div>
+
+  <div class="cards__container">
+    <div class="cards__group">
+      <span class="card_group__title low">Low</span>
+      {{! Next up cards bellow }}
+
+      <div class="card">
+        <p class="card__title">Card mock title</p>
+        <p class="card__priority low">Low</p>
+      </div>
+      <div class="new_task__container">
+        <hr />
+        <p>+ New</p>
+      </div>
+
+    </div>
+    <div class="cards__group">
+      <span class="card_group__title yellow">Medium</span>
+      {{! In progress cards bellow }}
+
+      <div class="card">
+        <p class="card__title">Card mock title</p>
+        <p class="card__priority medium">Medium</p>
+      </div>
+      <div class="new_task__container">
+        <hr />
+        <p>+ New</p>
+      </div>
+
+    </div>
+
+    <div class="cards__group">
+      <span class="card_group__title high">High</span>
+      {{! Discarded cards bellow }}
+
+      <div class="card">
+        <p class="card__title">Card mock title</p>
+        <p class="card__priority low">Low</p>
+      </div>
+      <div class="new_task__container">
+        <hr />
+        <p>+ New</p>
+      </div>
+
+    </div>
+
+    <div class="cards__group">
+      <span class="card_group__title purple">Undefined</span>
+      {{! Discarded cards bellow }}
+
+      <div class="card">
+        <p class="card__title">Card mock title</p>
+        <p class="card__priority low">Low</p>
+      </div>
+      <div class="new_task__container">
+        <hr />
+        <p>+ New</p>
+      </div>
+
+    </div>
+  </div>
 </div>
