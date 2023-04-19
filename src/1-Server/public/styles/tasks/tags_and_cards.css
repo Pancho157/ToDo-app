@@ -1,0 +1,55 @@
+.card {
+  width: 100%;
+  max-width: 200px;
+  background-color: var(--light-gray);
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card__title {
+  font-size: var(--small-text);
+  color: #fff;
+}
+
+.card__priority {
+  width: fit-content;
+  padding: 1px 16px;
+  margin-top: 8px;
+  background-color: #fcd34d;
+  border-radius: 4px;
+}
+
+/* Priority */
+.low {
+  background-color: #43deab !important;
+}
+
+.medium {
+  background-color: #de7f37 !important;
+}
+
+.high {
+  background-color: #ef4444 !important;
+}
+
+/* Status */
+.nextUp {
+  background-color: var(--light-gray);
+}
+
+.inProgress {
+  background-color: #fcd34d !important;
+}
+
+.pending {
+  background-color: #3f20ff !important;
+}
+
+.completed {
+  background-color: #10b981 !important;
+}
+
+.discarded {
+  background-color: #8b5cf6 !important;
+}

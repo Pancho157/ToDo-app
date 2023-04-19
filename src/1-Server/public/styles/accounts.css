@@ -111,6 +111,13 @@ p.red-text {
 .table tr td.table__add_element {
   padding-left: 32px;
   color: var(--lighter-gray);
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.table tr td.table__add_element:hover {
+  background-color: var(--lighter-gray);
+  color: var(--light-gray);
 }
 
 input[type="checkbox"] {

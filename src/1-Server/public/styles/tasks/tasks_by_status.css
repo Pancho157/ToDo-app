@@ -34,56 +34,6 @@
   border-radius: 8px;
 }
 
-.card_group__title.yellow {
-  background-color: #fcd34d;
-}
-
-.card_group__title.blue {
-  background-color: #3f20ff;
-}
-
-.card_group__title.green {
-  background-color: #10b981;
-}
-
-.card_group__title.purple {
-  background-color: #8b5cf6;
-}
-
-.card {
-  width: 100%;
-  max-width: 200px;
-  background-color: var(--light-gray);
-  padding: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.card__title {
-  font-size: var(--small-text);
-  color: #fff;
-}
-
-.card__priority {
-  width: fit-content;
-  padding: 1px 16px;
-  margin-top: 8px;
-  background-color: #fcd34d;
-  border-radius: 4px;
-}
-
-.low {
-  background-color: #43deab;
-}
-
-.medium {
-  background-color: #de7f37;
-}
-
-.high {
-  background-color: #ef4444;
-}
-
 .new_task__container {
   width: 100%;
   cursor: pointer;
