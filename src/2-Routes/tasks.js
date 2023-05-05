@@ -1,4 +1,4 @@
-const { Router } = require("express");
+import Router from "express";
 
 const tasks = Router();
 
@@ -18,4 +18,4 @@ tasks.get("/timeline", (req, res) => {
   res.render("tasks_by_timeline", { layout: "tasks" });
 });
 
-module.exports = { tasks };
+export { tasks };

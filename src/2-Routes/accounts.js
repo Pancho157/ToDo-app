@@ -1,4 +1,4 @@
-const { Router } = require("express");
+import { Router } from "express";
 
 const accounts = Router();
 
@@ -6,4 +6,4 @@ accounts.get("/", (req, res) => {
   res.render("accounts");
 });
 
-module.exports = { accounts };
+export { accounts };

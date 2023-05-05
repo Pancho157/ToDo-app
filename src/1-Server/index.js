@@ -1,15 +1,21 @@
-require("dotenv").config();
+import dotenv from "dotenv";
+dotenv.config();
 
-const { forms } = require("../2-Routes/forms");
-const { tasks } = require("../2-Routes/tasks");
-const { calendar } = require("../2-Routes/calendar");
-const { accounts } = require("../2-Routes/accounts");
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
+import { engine } from "express-handlebars";
 
-const express = require("express");
-const path = require("path");
-const { engine } = require("express-handlebars");
+// Routes
+import { forms } from "../2-Routes/forms.js";
+import { tasks } from "../2-Routes/tasks.js";
+import { calendar } from "../2-Routes/calendar.js";
+import { accounts } from "../2-Routes/accounts.js";
 
 let app = express();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dir = path.dirname(__filename);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
@@ -18,12 +24,12 @@ app.listen(PORT, () => {
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dir + "/public"));
 
 // Handlebars initialization
 app.engine(".hbs", engine({ extname: ".hbs" }));
 app.set("view engine", ".hbs");
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dir, "views"));
 
 // Routes
 app.use("/", forms);

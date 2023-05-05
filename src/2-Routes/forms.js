@@ -1,4 +1,4 @@
-const { Router } = require("express");
+import Router from "express";
 
 const forms = Router();
 
@@ -10,4 +10,4 @@ forms.post("/login", () => {});
 
 forms.post("/register", () => {});
 
-module.exports = { forms };
+export { forms };
